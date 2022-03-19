@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- UIkit CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+     <link href="https://fonts.cdnfonts.com/css/semplicita" rel="stylesheet">
+ 
+     <!-- UIkit JS -->
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+
+</head>
+<body>
+    <!-- Cabezera -->
+    <div class="Pokemon-container" >                
+        <div>
+            <img  src="img/personaje.png">
+            <img  src="img/logo.jfif" >   
+        </div>
+        <div class="uk-width-4-4">
+            <nav class="" uk-navbar>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="">Pokemon</a></li>
+                        <li><a href="">Personajes</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Sobre nosotros</a></li>                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Curerpo de la pagina -->
+    <div>
+        <div class="pokedex__header-title">
+            <h1>Busca tu pokemon</h1>
+        </div>
+       
+        <div class="pokedex__header-search">
+        <form action="" onsubmit="searchPokemon(event)">            
+            <input type="text" name="pokemon"class="" >
+            <button>
+                <img src="img/pokeball.png" alt="pokeball">
+            </button>
+        </form>
+        </div>
+        <div data-poke-card class="poke-card">
+            <div data-poke-name>POKEDEX</div>
+            <div data-poke-img-container class="">
+                <img data-poke-img class="poke-img" src="img/poke-shadow.png"/>
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+        <br>
+       <div class="pokedex__header-aline">
+         <div class="arrow-left" id="arrow-left"></div>
+         <div class="order" id="textGen">Generacion #1</div>
+         <div class="arrow-right" id="arrow-right"></div>
+       </div>
+               
+       <div class="pokedex__pokemon-content" id="pokemonContent" onclick="exitModal()">
+
+        
+    </div>  
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
